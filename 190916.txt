@@ -1,0 +1,18 @@
+<Blockchain>
+공유원장 Shared Ledger
+스마트 계약 Smart Contract
+프라이버시 및 보안 Privacy & Security
+합의 Consensus
+
+특징
+비즈니스 네트워크
+자산 추적
+합의
+불변성
+최종성(트랜잭션이 확정되는 시점)
+
+
+hyperledger Fabric 특징
+일반 프로그래밍 언어 사용
+Smart Contract -> Chaincode
+가상환경만 주어지면 동작할 수 있는 가령 Java 같은 언어 사용가능

@@ -1,0 +1,17 @@
+hyperledger fabric 개발 순서
+1. docker 설치 확인
+2. docker-compose 설치 확인
+3. go 설치 확인
+4. node.js 설치 확인
+5. 웹서버 작성
+6. 웹서버에 HLF SDK install
+7. fabric-samples/basic_network를 가동
+8. 체인코드 인스톨
+9. 체인코드 초기화
+10. 웹 라우터 코드에 admin과 user1에 대한 지갑 생성 코드 추가
+11. 웹화면에 a의 잔액 확인과 송금 기능을 넣는다.
+12. 웹 라우터 코드에 잔액 확인과 송금 기능을 넣는다.
+
+peer chaincode list --installed
+    2  peer chaincode install -n jes_cc_node -v 1.0 -l node -p /opt/gopath/src/github.com/chaincode_example02/node/
+    3  peer chaincode instantiate -C mychannel -n jes_cc_node -l node -v 1.0 -c '{"Args":["init","a","100","b","200"]}'
